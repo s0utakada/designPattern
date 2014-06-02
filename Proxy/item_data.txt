@@ -1,0 +1,4 @@
+商品ID    商品名
+1         Limited T-Shirt
+2         Teddy Bear
+3         Cookie Set
