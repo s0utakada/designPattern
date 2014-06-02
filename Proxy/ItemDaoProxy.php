@@ -8,13 +8,14 @@
 
     namespace Proxy;
 
+    require_once 'ItemDao.php';
 
     /**
      * Class ItemDaoProxy
      *
      * @package Proxy
      */
-    class ItemDaoProxy {
+    class ItemDaoProxy implements ItemDao {
 
 
         /**
