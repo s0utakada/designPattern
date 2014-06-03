@@ -52,7 +52,7 @@
          */
         public function getMenu() {
 
-            $menu = '<a href="?mode=inc">Count Up</a> | <a href="?mode=reset">Reset</a> | <a href="?mode=statr">LogOut</a>';
+            $menu = '<a href="?mode=inc">Count Up</a> | <a href="?mode=reset">Reset</a> | <a href="?mode=state">LogOut</a>';
 
             return $menu;
         }
