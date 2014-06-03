@@ -19,12 +19,12 @@
 
         private static $singleton = NULL;
 
-        function __construct() {
+        private function __construct() {
         }
 
         public static function getInstance() {
 
-            if(self::$singleton == NULL) {
+            if(self::$singleton === NULL) {
                 self::$singleton = new UnauthorizedState();
             }
 
@@ -52,7 +52,7 @@
          */
 
         public function getMenu() {
-            $menu = '<a href="?mode=state">LogIn</a>';
+            $menu = '<a href="?mode=state">Log In</a>';
             return $menu;
         }
 

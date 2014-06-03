@@ -17,18 +17,18 @@
     class AuthorizedState implements UserState {
 
 
-        private static $singletion = NULL;
+        private static $singleton = NULL;
 
-        function __construct() {
+        private function __construct() {
         }
 
         public static function getInstance() {
 
-            if(self::$singletion == NULL) {
-                self::$singletion = new AuthorizedState();
+            if(self::$singleton === NULL) {
+                self::$singleton = new AuthorizedState();
             }
 
-            return self::$singletion;
+            return self::$singleton;
         }
 
         /**
@@ -52,7 +52,7 @@
          */
         public function getMenu() {
 
-            $menu = '<a href="?mode=inc">Count Up</a> | <a href="?mode=reset">Reset</a> | <a href="?mode=state">LogOut</a>';
+            $menu = '<a href="?mode=inc">Count Up</a> | <a href="?mode=reset">Reset</a> | <a href="?mode=state">Log Out</a>';
 
             return $menu;
         }
